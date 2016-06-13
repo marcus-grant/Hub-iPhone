@@ -15,6 +15,7 @@
 		2CE7ADD01D0BB11800D179C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE7ADCE1D0BB11800D179C0 /* LaunchScreen.storyboard */; };
 		2CE7ADDB1D0BB11800D179C0 /* Hub_iPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADDA1D0BB11800D179C0 /* Hub_iPhoneTests.swift */; };
 		2CE7ADE61D0BB11800D179C0 /* Hub_iPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADE51D0BB11800D179C0 /* Hub_iPhoneUITests.swift */; };
+		2CE7ADF41D0E45CB00D179C0 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADF31D0E45CB00D179C0 /* FriendsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2CE7ADE11D0BB11800D179C0 /* Hub-iPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hub-iPhoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE7ADE51D0BB11800D179C0 /* Hub_iPhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hub_iPhoneUITests.swift; sourceTree = "<group>"; };
 		2CE7ADE71D0BB11800D179C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE7ADF31D0E45CB00D179C0 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2CE7ADCC1D0BB11800D179C0 /* Assets.xcassets */,
 				2CE7ADCE1D0BB11800D179C0 /* LaunchScreen.storyboard */,
 				2CE7ADD11D0BB11800D179C0 /* Info.plist */,
+				2CE7ADF31D0E45CB00D179C0 /* FriendsViewController.swift */,
 			);
 			path = "Hub-iPhone";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE7ADF41D0E45CB00D179C0 /* FriendsViewController.swift in Sources */,
 				2CE7ADC81D0BB11800D179C0 /* SecondViewController.swift in Sources */,
 				2CE7ADC41D0BB11800D179C0 /* AppDelegate.swift in Sources */,
 				2CE7ADC61D0BB11800D179C0 /* FirstViewController.swift in Sources */,
