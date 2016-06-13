@@ -17,6 +17,20 @@
 		2CE7ADE61D0BB11800D179C0 /* Hub_iPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADE51D0BB11800D179C0 /* Hub_iPhoneUITests.swift */; };
 		2CE7ADF41D0E45CB00D179C0 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADF31D0E45CB00D179C0 /* ContactsViewController.swift */; };
 		2CE7ADF71D0E565400D179C0 /* ContactsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADF51D0E565400D179C0 /* ContactsModel.xcdatamodeld */; };
+		2CE7AE071D0F1A9300D179C0 /* Reminder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADF91D0F1A9300D179C0 /* Reminder+CoreDataProperties.swift */; };
+		2CE7AE081D0F1A9300D179C0 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADFA1D0F1A9300D179C0 /* Reminder.swift */; };
+		2CE7AE091D0F1A9300D179C0 /* FacebookProfile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADFB1D0F1A9300D179C0 /* FacebookProfile+CoreDataProperties.swift */; };
+		2CE7AE0A1D0F1A9300D179C0 /* FacebookProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADFC1D0F1A9300D179C0 /* FacebookProfile.swift */; };
+		2CE7AE0B1D0F1A9300D179C0 /* Communique+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADFD1D0F1A9300D179C0 /* Communique+CoreDataProperties.swift */; };
+		2CE7AE0C1D0F1A9300D179C0 /* Communique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADFE1D0F1A9300D179C0 /* Communique.swift */; };
+		2CE7AE0D1D0F1A9300D179C0 /* PhysicalAddress+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADFF1D0F1A9300D179C0 /* PhysicalAddress+CoreDataProperties.swift */; };
+		2CE7AE0E1D0F1A9300D179C0 /* PhysicalAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7AE001D0F1A9300D179C0 /* PhysicalAddress.swift */; };
+		2CE7AE0F1D0F1A9300D179C0 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7AE011D0F1A9300D179C0 /* Contact+CoreDataProperties.swift */; };
+		2CE7AE101D0F1A9300D179C0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7AE021D0F1A9300D179C0 /* Contact.swift */; };
+		2CE7AE111D0F1A9300D179C0 /* Phone+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7AE031D0F1A9300D179C0 /* Phone+CoreDataProperties.swift */; };
+		2CE7AE121D0F1A9300D179C0 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7AE041D0F1A9300D179C0 /* Phone.swift */; };
+		2CE7AE131D0F1A9300D179C0 /* EMail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7AE051D0F1A9300D179C0 /* EMail+CoreDataProperties.swift */; };
+		2CE7AE141D0F1A9300D179C0 /* EMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7AE061D0F1A9300D179C0 /* EMail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +67,20 @@
 		2CE7ADE71D0BB11800D179C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CE7ADF31D0E45CB00D179C0 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		2CE7ADF61D0E565400D179C0 /* ContactsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactsModel.xcdatamodel; sourceTree = "<group>"; };
+		2CE7ADF91D0F1A9300D179C0 /* Reminder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Reminder+CoreDataProperties.swift"; path = "CoreDataModels/Reminder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CE7ADFA1D0F1A9300D179C0 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reminder.swift; path = CoreDataModels/Reminder.swift; sourceTree = "<group>"; };
+		2CE7ADFB1D0F1A9300D179C0 /* FacebookProfile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FacebookProfile+CoreDataProperties.swift"; path = "CoreDataModels/FacebookProfile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CE7ADFC1D0F1A9300D179C0 /* FacebookProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FacebookProfile.swift; path = CoreDataModels/FacebookProfile.swift; sourceTree = "<group>"; };
+		2CE7ADFD1D0F1A9300D179C0 /* Communique+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Communique+CoreDataProperties.swift"; path = "CoreDataModels/Communique+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CE7ADFE1D0F1A9300D179C0 /* Communique.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Communique.swift; path = CoreDataModels/Communique.swift; sourceTree = "<group>"; };
+		2CE7ADFF1D0F1A9300D179C0 /* PhysicalAddress+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PhysicalAddress+CoreDataProperties.swift"; path = "CoreDataModels/PhysicalAddress+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CE7AE001D0F1A9300D179C0 /* PhysicalAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhysicalAddress.swift; path = CoreDataModels/PhysicalAddress.swift; sourceTree = "<group>"; };
+		2CE7AE011D0F1A9300D179C0 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Contact+CoreDataProperties.swift"; path = "CoreDataModels/Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CE7AE021D0F1A9300D179C0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = CoreDataModels/Contact.swift; sourceTree = "<group>"; };
+		2CE7AE031D0F1A9300D179C0 /* Phone+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Phone+CoreDataProperties.swift"; path = "CoreDataModels/Phone+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CE7AE041D0F1A9300D179C0 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Phone.swift; path = CoreDataModels/Phone.swift; sourceTree = "<group>"; };
+		2CE7AE051D0F1A9300D179C0 /* EMail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "EMail+CoreDataProperties.swift"; path = "CoreDataModels/EMail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CE7AE061D0F1A9300D179C0 /* EMail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EMail.swift; path = CoreDataModels/EMail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +131,7 @@
 		2CE7ADC21D0BB11800D179C0 /* Hub-iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				2CE7ADF81D0F1A5100D179C0 /* CoreDataModels */,
 				2CE7ADC31D0BB11800D179C0 /* AppDelegate.swift */,
 				2CE7ADC51D0BB11800D179C0 /* FirstViewController.swift */,
 				2CE7ADC71D0BB11800D179C0 /* SecondViewController.swift */,
@@ -111,7 +140,6 @@
 				2CE7ADCE1D0BB11800D179C0 /* LaunchScreen.storyboard */,
 				2CE7ADD11D0BB11800D179C0 /* Info.plist */,
 				2CE7ADF31D0E45CB00D179C0 /* ContactsViewController.swift */,
-				2CE7ADF51D0E565400D179C0 /* ContactsModel.xcdatamodeld */,
 			);
 			path = "Hub-iPhone";
 			sourceTree = "<group>";
@@ -132,6 +160,28 @@
 				2CE7ADE71D0BB11800D179C0 /* Info.plist */,
 			);
 			path = "Hub-iPhoneUITests";
+			sourceTree = "<group>";
+		};
+		2CE7ADF81D0F1A5100D179C0 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				2CE7ADF51D0E565400D179C0 /* ContactsModel.xcdatamodeld */,
+				2CE7ADF91D0F1A9300D179C0 /* Reminder+CoreDataProperties.swift */,
+				2CE7ADFA1D0F1A9300D179C0 /* Reminder.swift */,
+				2CE7ADFB1D0F1A9300D179C0 /* FacebookProfile+CoreDataProperties.swift */,
+				2CE7ADFC1D0F1A9300D179C0 /* FacebookProfile.swift */,
+				2CE7ADFD1D0F1A9300D179C0 /* Communique+CoreDataProperties.swift */,
+				2CE7ADFE1D0F1A9300D179C0 /* Communique.swift */,
+				2CE7ADFF1D0F1A9300D179C0 /* PhysicalAddress+CoreDataProperties.swift */,
+				2CE7AE001D0F1A9300D179C0 /* PhysicalAddress.swift */,
+				2CE7AE011D0F1A9300D179C0 /* Contact+CoreDataProperties.swift */,
+				2CE7AE021D0F1A9300D179C0 /* Contact.swift */,
+				2CE7AE031D0F1A9300D179C0 /* Phone+CoreDataProperties.swift */,
+				2CE7AE041D0F1A9300D179C0 /* Phone.swift */,
+				2CE7AE051D0F1A9300D179C0 /* EMail+CoreDataProperties.swift */,
+				2CE7AE061D0F1A9300D179C0 /* EMail.swift */,
+			);
+			name = CoreDataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +316,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE7ADF41D0E45CB00D179C0 /* ContactsViewController.swift in Sources */,
+				2CE7AE091D0F1A9300D179C0 /* FacebookProfile+CoreDataProperties.swift in Sources */,
+				2CE7AE131D0F1A9300D179C0 /* EMail+CoreDataProperties.swift in Sources */,
+				2CE7AE0F1D0F1A9300D179C0 /* Contact+CoreDataProperties.swift in Sources */,
+				2CE7AE081D0F1A9300D179C0 /* Reminder.swift in Sources */,
+				2CE7AE0A1D0F1A9300D179C0 /* FacebookProfile.swift in Sources */,
+				2CE7AE0B1D0F1A9300D179C0 /* Communique+CoreDataProperties.swift in Sources */,
 				2CE7ADC81D0BB11800D179C0 /* SecondViewController.swift in Sources */,
 				2CE7ADC41D0BB11800D179C0 /* AppDelegate.swift in Sources */,
 				2CE7ADC61D0BB11800D179C0 /* FirstViewController.swift in Sources */,
+				2CE7AE0C1D0F1A9300D179C0 /* Communique.swift in Sources */,
+				2CE7AE0D1D0F1A9300D179C0 /* PhysicalAddress+CoreDataProperties.swift in Sources */,
+				2CE7AE121D0F1A9300D179C0 /* Phone.swift in Sources */,
+				2CE7AE0E1D0F1A9300D179C0 /* PhysicalAddress.swift in Sources */,
+				2CE7AE101D0F1A9300D179C0 /* Contact.swift in Sources */,
 				2CE7ADF71D0E565400D179C0 /* ContactsModel.xcdatamodeld in Sources */,
+				2CE7AE111D0F1A9300D179C0 /* Phone+CoreDataProperties.swift in Sources */,
+				2CE7AE141D0F1A9300D179C0 /* EMail.swift in Sources */,
+				2CE7AE071D0F1A9300D179C0 /* Reminder+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
-    <entity name="Communique" syncable="YES">
+    <entity name="Communique" representedClassName=".Communique" syncable="YES">
         <attribute name="contents" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" attributeType="Date" indexed="YES" syncable="YES"/>
         <attribute name="didRespond" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
@@ -12,8 +12,7 @@
         <relationship name="sourceFacebook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FacebookProfile" inverseName="communiques" inverseEntity="FacebookProfile" syncable="YES"/>
         <relationship name="sourcePhone" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Phone" inverseName="communiques" inverseEntity="Phone" syncable="YES"/>
     </entity>
-    <entity name="Contact" syncable="YES">
-        <attribute name="attribute" optional="YES" syncable="YES"/>
+    <entity name="Contact" representedClassName=".Contact" syncable="YES">
         <attribute name="company" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
@@ -27,25 +26,25 @@
         <relationship name="phones" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Phone" inverseName="sourceContact" inverseEntity="Phone" syncable="YES"/>
         <relationship name="reminders" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Reminder" inverseName="sourceContact" inverseEntity="Reminder" syncable="YES"/>
     </entity>
-    <entity name="EMail" syncable="YES">
+    <entity name="EMail" representedClassName=".EMail" syncable="YES">
         <attribute name="address" attributeType="String" syncable="YES"/>
         <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="communiques" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Communique" inverseName="sourceEMail" inverseEntity="Communique" syncable="YES"/>
         <relationship name="sourceContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="emails" inverseEntity="Contact" syncable="YES"/>
     </entity>
-    <entity name="FacebookProfile" syncable="YES">
-        <attribute name="attribute" optional="YES" syncable="YES"/>
+    <entity name="FacebookProfile" representedClassName=".FacebookProfile" syncable="YES">
         <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="communiques" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Communique" inverseName="sourceFacebook" inverseEntity="Communique" syncable="YES"/>
         <relationship name="sourceContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="facebookProfile" inverseEntity="Contact" syncable="YES"/>
     </entity>
-    <entity name="Phone" syncable="YES">
+    <entity name="Phone" representedClassName=".Phone" syncable="YES">
         <attribute name="label" attributeType="String" defaultValueString="Other" indexed="YES" syncable="YES"/>
         <attribute name="number" attributeType="String" indexed="YES" syncable="YES"/>
         <relationship name="communiques" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Communique" inverseName="sourcePhone" inverseEntity="Communique" syncable="YES"/>
         <relationship name="sourceContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="phones" inverseEntity="Contact" syncable="YES"/>
     </entity>
-    <entity name="PhysicalAddress" syncable="YES">
+    <entity name="PhysicalAddress" representedClassName=".PhysicalAddress" syncable="YES">
         <attribute name="buildingUnit" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="label" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
@@ -55,7 +54,7 @@
         <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="sourceContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="addresses" inverseEntity="Contact" syncable="YES"/>
     </entity>
-    <entity name="Reminder" syncable="YES">
+    <entity name="Reminder" representedClassName=".Reminder" syncable="YES">
         <attribute name="communiqueUID" optional="YES" attributeType="Integer 64" syncable="YES"/>
         <attribute name="completed" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="creationDate" attributeType="Date" syncable="YES"/>
@@ -66,7 +65,7 @@
         <relationship name="sourceContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="reminders" inverseEntity="Contact" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Contact" positionX="-407" positionY="-24" width="128" height="238"/>
+        <element name="Contact" positionX="-407" positionY="-24" width="128" height="223"/>
         <element name="Phone" positionX="-225" positionY="-229" width="128" height="103"/>
         <element name="EMail" positionX="-225" positionY="-45" width="128" height="103"/>
         <element name="FacebookProfile" positionX="-218" positionY="65" width="128" height="103"/>
