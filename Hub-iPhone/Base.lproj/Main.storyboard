@@ -48,7 +48,7 @@
         <!--Contacts-->
         <scene sceneID="wF1-Cw-en9">
             <objects>
-                <tableViewController title="Contacts" id="T8y-kn-0nY" customClass="ContactsViewController" sceneMemberID="viewController">
+                <tableViewController title="Contacts" id="T8y-kn-0nY" customClass="ContactsViewController" customModule="Hub_iPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="z12-Rv-T7S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,12 +78,47 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Friends" id="DYw-b9-2yS"/>
+                    <navigationItem key="navigationItem" title="Friends" id="DYw-b9-2yS">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="xGK-2N-Bjb"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xja-rO-d54" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1400" y="360"/>
+        </scene>
+        <!--Add Contact-->
+        <scene sceneID="VE2-hN-Q24">
+            <objects>
+                <viewController title="Add Contact" id="1E7-nz-xSY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4vG-IJ-NIZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="oME-hJ-LgJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Fc-sM-Aea">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRL-77-qya">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="cancel" id="fMu-2H-nwa"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SLc-d1-z0a"/>
+                                    <barButtonItem title="Import Contact" id="FTf-k5-JIP"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HsF-Ou-yOg"/>
+                                    <barButtonItem style="plain" systemItem="save" id="cyI-w1-KYR"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oME-hJ-LgJ" firstAttribute="top" secondItem="PRL-77-qya" secondAttribute="bottom" id="ycr-oF-Gul"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Es-BU-fFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="1134"/>
         </scene>
         <!--Friends Navigation Controller-->
         <scene sceneID="f3F-ED-ZfQ">
@@ -113,7 +148,27 @@
                     <view key="view" contentMode="scaleToFill" id="5lp-YR-4cN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Settings View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqn-mM-VwV">
+                                <rect key="frame" x="228" y="153" width="146" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Under Construction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLM-Q1-sVc">
+                                <rect key="frame" x="228" y="190" width="143" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Eqn-mM-VwV" firstAttribute="top" secondItem="PMZ-jk-atz" secondAttribute="bottom" constant="133" id="KZe-Bt-fvA"/>
+                            <constraint firstItem="pLM-Q1-sVc" firstAttribute="top" secondItem="Eqn-mM-VwV" secondAttribute="bottom" constant="8" id="Uuk-QF-WhN"/>
+                            <constraint firstItem="Eqn-mM-VwV" firstAttribute="centerX" secondItem="5lp-YR-4cN" secondAttribute="centerX" id="cRz-wx-Ez8"/>
+                            <constraint firstItem="pLM-Q1-sVc" firstAttribute="leading" secondItem="Eqn-mM-VwV" secondAttribute="leading" id="tff-Xl-mZK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="gab-Cj-QfE"/>
                 </viewController>

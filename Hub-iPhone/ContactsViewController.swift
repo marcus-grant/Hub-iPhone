@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsViewController: UITableViewController {
+class ContactsViewController: UITableViewController {
 
   var friendsArray: [String] = [ "Collin", "Tan", "Andy", "Collin", "selena", "Jill" ]
 
@@ -28,7 +28,7 @@ class FriendsViewController: UITableViewController {
   override func tableView(tableView: UITableView,
                           cellForRowAtIndexPath indexPath: NSIndexPath)->UITableViewCell{
 
-    let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath)
+    let cell = tableView.dequeueReusableCellWithIdentifier("ContactCell", forIndexPath: indexPath)
 
     cell.textLabel!.text = friendsArray[indexPath.row]
 
