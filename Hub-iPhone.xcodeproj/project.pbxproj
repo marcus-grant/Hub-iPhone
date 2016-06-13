@@ -15,7 +15,8 @@
 		2CE7ADD01D0BB11800D179C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE7ADCE1D0BB11800D179C0 /* LaunchScreen.storyboard */; };
 		2CE7ADDB1D0BB11800D179C0 /* Hub_iPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADDA1D0BB11800D179C0 /* Hub_iPhoneTests.swift */; };
 		2CE7ADE61D0BB11800D179C0 /* Hub_iPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADE51D0BB11800D179C0 /* Hub_iPhoneUITests.swift */; };
-		2CE7ADF41D0E45CB00D179C0 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADF31D0E45CB00D179C0 /* FriendsViewController.swift */; };
+		2CE7ADF41D0E45CB00D179C0 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADF31D0E45CB00D179C0 /* ContactsViewController.swift */; };
+		2CE7ADF71D0E565400D179C0 /* ContactsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7ADF51D0E565400D179C0 /* ContactsModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,8 @@
 		2CE7ADE11D0BB11800D179C0 /* Hub-iPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hub-iPhoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE7ADE51D0BB11800D179C0 /* Hub_iPhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hub_iPhoneUITests.swift; sourceTree = "<group>"; };
 		2CE7ADE71D0BB11800D179C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CE7ADF31D0E45CB00D179C0 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		2CE7ADF31D0E45CB00D179C0 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		2CE7ADF61D0E565400D179C0 /* ContactsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactsModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,8 @@
 				2CE7ADCC1D0BB11800D179C0 /* Assets.xcassets */,
 				2CE7ADCE1D0BB11800D179C0 /* LaunchScreen.storyboard */,
 				2CE7ADD11D0BB11800D179C0 /* Info.plist */,
-				2CE7ADF31D0E45CB00D179C0 /* FriendsViewController.swift */,
+				2CE7ADF31D0E45CB00D179C0 /* ContactsViewController.swift */,
+				2CE7ADF51D0E565400D179C0 /* ContactsModel.xcdatamodeld */,
 			);
 			path = "Hub-iPhone";
 			sourceTree = "<group>";
@@ -262,10 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE7ADF41D0E45CB00D179C0 /* FriendsViewController.swift in Sources */,
+				2CE7ADF41D0E45CB00D179C0 /* ContactsViewController.swift in Sources */,
 				2CE7ADC81D0BB11800D179C0 /* SecondViewController.swift in Sources */,
 				2CE7ADC41D0BB11800D179C0 /* AppDelegate.swift in Sources */,
 				2CE7ADC61D0BB11800D179C0 /* FirstViewController.swift in Sources */,
+				2CE7ADF71D0E565400D179C0 /* ContactsModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +494,7 @@
 				2CE7ADEC1D0BB11800D179C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CE7ADED1D0BB11800D179C0 /* Build configuration list for PBXNativeTarget "Hub-iPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				2CE7ADEF1D0BB11800D179C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CE7ADF01D0BB11800D179C0 /* Build configuration list for PBXNativeTarget "Hub-iPhoneUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,8 +512,22 @@
 				2CE7ADF21D0BB11800D179C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2CE7ADF51D0E565400D179C0 /* ContactsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2CE7ADF61D0E565400D179C0 /* ContactsModel.xcdatamodel */,
+			);
+			currentVersion = 2CE7ADF61D0E565400D179C0 /* ContactsModel.xcdatamodel */;
+			path = ContactsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2CE7ADB81D0BB11800D179C0 /* Project object */;
 }
